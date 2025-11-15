@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tinygenkey/__init__.py
+tinygenkey/__init__.pyi
+tinygenkey/main.py
+tinygenkey/py.typed
+tinygenkey.egg-info/PKG-INFO
+tinygenkey.egg-info/SOURCES.txt
+tinygenkey.egg-info/dependency_links.txt
+tinygenkey.egg-info/entry_points.txt
+tinygenkey.egg-info/top_level.txt
