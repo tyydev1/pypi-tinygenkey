@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: tinygenkey
-Version: 0.1.7
+Version: 0.1.8
 Summary: A tiny, secure key generator.
 Author: Razka Rizaldi
 License: MIT
@@ -12,6 +12,12 @@ Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Dynamic: license-file
+
+[![On PyPI](https://img.shields.io/pypi/v/tinygenkey.svg)](https://pypi.org/project/tinygenkey/)
+![Downloads](https://pepy.tech/badge/tinygenkey)
+![Total Downloads](https://pepy.tech/badge/tinygenkey/total)
+![Python Version](https://img.shields.io/pypi/pyversions/tinygenkey.svg)
+![License](https://img.shields.io/pypi/l/tinygenkey.svg)
 
 # TinyGenKey
 
@@ -56,3 +62,9 @@ custom_alphabet = list("ABC123")
 key3 = tgk.gen_key(alphabet=custom_alphabet, length=8)
 print(key3)
 ```
+
+---
+
+## License
+
+This project is protected by the MIT License.
