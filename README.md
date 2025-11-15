@@ -39,7 +39,7 @@ key = tgk.gen_key()
 print(key)
 
 # Generate a key with a prefix and suffix
-key2 = tgk.gen_key(key_prefix="user_", key_suffix="_end", length=16)
+key2 = tgk.gen_key(prefix="user_", suffix="_end", length=16)
 print(key2)
 
 # Use a custom alphabet
