@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: tinygenkey
-Version: 0.1.8
+Version: 0.1.8.1
 Summary: A tiny, secure key generator.
 Author: Razka Rizaldi
 License: MIT
@@ -54,7 +54,7 @@ key = tgk.gen_key()
 print(key)
 
 # Generate a key with a prefix and suffix
-key2 = tgk.gen_key(key_prefix="user_", key_suffix="_end", length=16)
+key2 = tgk.gen_key(prefix="user_", suffix="_end", length=16)
 print(key2)
 
 # Use a custom alphabet
