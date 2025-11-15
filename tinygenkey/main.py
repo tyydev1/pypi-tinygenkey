@@ -42,5 +42,5 @@ def gen_key(
 
 def test_gen() -> None:
     """Test generation of safe key"""
-    key = gen_key("testKey__", key_suffix="__")
+    key = gen_key(prefix="testKey__", suffix="__")
     print(key)
