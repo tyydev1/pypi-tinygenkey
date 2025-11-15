@@ -31,9 +31,9 @@ def crypt(seq: List[str]) -> str:
 
 
 def gen_key(
+    alphabet: list[str] = CHARS_LIST,
     length: int = 42,
     prefix: str = "",
-    alphabet: list[str] = CHARS_LIST,
     suffix: str = "",
 ) -> str:
     """Generates a secure key with optional prefix and suffix."""
