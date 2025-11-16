@@ -1,4 +1,12 @@
-from .main import crypt, gen_key, keys_align, keys_gen, keys_seq, rand_key
+from .main import crypt, gen_key, keys_align, keys_gen, keys_seq, keys_verify, rand_key
 
-__all__ = ["gen_key", "rand_key", "crypt", "keys_gen", "keys_seq", "keys_align"]
-__version__ = "0.2.1"
+__all__ = [
+    "gen_key",
+    "rand_key",
+    "crypt",
+    "keys_gen",
+    "keys_seq",
+    "keys_align",
+    "keys_verify",
+]
+__version__ = "0.3.0"

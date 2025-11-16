@@ -2,6 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 tests/conftest.py
+tests/test_keys_verify.py
 tests/test_security.py
 tinygenkey/__init__.py
 tinygenkey/__init__.pyi
