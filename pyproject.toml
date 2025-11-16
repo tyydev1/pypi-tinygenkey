@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tinygenkey"
-version = "0.1.8.3"
+version = "0.2.0"
 description = "A tiny, secure key generator."
 authors = [
-    { name = "Razka Rizaldi" }
+    { name = "Razka Rizaldi", email = "razka.rizaldis@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
