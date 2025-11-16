@@ -191,7 +191,7 @@ def keys_verify(
         hints.append(
             "'max' length failure. Did you consider max_length to include affix?"
         )
-    if alphabet is None and not (prefix or suffix or min_length or max_length)
+    if alphabet is None and not (prefix or suffix or min_length or max_length):
         hints.append(
             "No arguments passed to alphabet will result to no invalid characters. Did you mean to put an empty list?"
         )
