@@ -73,7 +73,13 @@ def gen_key(
     .. deprecated:: 0.2.0
         Use :func:`keys_gen` instead.
     """
-    return keys_gen("alphanumeric", alphabet, length, prefix, suffix)
+    return keys_gen(
+        length=length,
+        alphabet=alphabet,
+        prefix=prefix,
+        suffix=suffix,
+        preset="alphanumeric",
+    )
 
 
 def keys_gen(
@@ -108,11 +114,6 @@ def keys_seq(
 def keys_align(keys: list[str], sep: str = "\n") -> str:
     """Align a list of keys into an organized string"""
     return sep.join(keys)
-
-
-# def keys_verify(key: str, alphabet: list[str] | KEYS_PRESETS) -> dict:
-#     """Checks whether the 'key' only uses characters from 'alphabet'"""
-#     return {}
 
 
 def test_gen() -> None:
