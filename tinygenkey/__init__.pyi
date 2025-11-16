@@ -9,4 +9,4 @@ __all__ = [
     "keys_align",
     "keys_verify",
 ]
-__version__ = "0.3.0"
+__version__ = "0.3.1"

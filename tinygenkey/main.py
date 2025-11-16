@@ -151,6 +151,7 @@ def keys_verify(
     if alphabet is not None:
         invalid_chars = set(core_chars) - set(allowed_chars)
         if invalid_chars:
+            is_valid = False
             invalid_chars = list(invalid_chars)
             reasons.append(f"Invalid characters: {', '.join(invalid_chars)}")
     else:
@@ -169,7 +170,7 @@ def keys_verify(
     if prefix and (not key.startswith(prefix)):
         is_valid = False
         reasons.append(
-            f"Invalid prefix: expected '{prefix}', found '{key[: -len(prefix)]}'"
+            f"Invalid prefix: expected '{prefix}', found '{key[: len(prefix)]}'"
         )
     if suffix and (not key.endswith(suffix)):
         is_valid = False
@@ -190,7 +191,7 @@ def keys_verify(
         hints.append(
             "'max' length failure. Did you consider max_length to include affix?"
         )
-    if alphabet is None:
+    if alphabet is None and not (prefix or suffix or min_length or max_length)
         hints.append(
             "No arguments passed to alphabet will result to no invalid characters. Did you mean to put an empty list?"
         )
@@ -200,7 +201,7 @@ def keys_verify(
 
     report = {
         "valid": is_valid,
-        "expected_charset": allowed_chars,
+        "expected_charset": allowed_chars if alphabet else None,
         "length": length,
         "min_length": min_length,
         "max_length": max_length,

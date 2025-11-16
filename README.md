@@ -67,6 +67,33 @@ print(tgk.keys_align(new_tokens))
 
 Separates a list of tokens with a passed separator argument (default is newline `\n`). Examples could be seen on `keys_seq()`
 
+## `keys_verify()`
+
+A powerful tool to validate keys against character sets, length requirements, and more:
+
+```python
+result = tgk.keys_verify(
+    "api_abc123_key",
+    preset="hex",
+    min_length=8,
+    max_length=20,
+    prefix="api_",
+    suffix="_key"
+)
+
+if result["valid"]:
+    print("[v] Valid key!")
+else:
+    print("[x] Issues found:")
+    for reason in result["reasons"]:
+        print(f"  - {reason}")
+    
+    if result["hints"]:
+        print("\nHints:")
+        for hint in result["hints"]:
+            print(f"  {hint}")
+```
+
 ---
 
 ## Advanced Usage
@@ -123,7 +150,7 @@ Cleaner, more readable, easier to maintain.
 
 ## !!!! WARNING Syntax Migration !!!!
 
-In version 0.2.0, the syntax for `gen_key()` will be replaced by a more powerful and consistent `keys_gen()`. You may still use `gen_key()` as usual, but it is **deprecated**.
+In version 0.2.0, the syntax for `gen_key()` was replaced by a more powerful and consistent `keys_gen()`. You may still use `gen_key()` as usual, but it is **deprecated**.
 
 On version stable 0.5.0, `gen_key()` will be deleted, but *optional deprecated-supported versions* will still be maintained as version `>0.5-dep` and is NOT preserved in minor updates.
 
