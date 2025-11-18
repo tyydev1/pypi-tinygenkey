@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: tinygenkey
-Version: 0.3.1
+Version: 0.3.1.1
 Summary: A tiny, secure key generator.
 Author-email: Razka Rizaldi <razka.rizaldis@gmail.com>
 License: MIT
@@ -188,3 +188,24 @@ You may further verify the security of the code yourself.
 ## License
 
 This project is protected by the MIT License.
+
+---
+
+## Note from Creator - OOP
+
+We're moving from functional programming to OOP! This means your keys will be made of singular Key objects that store the functions!
+Look, I know I'm pushing you guys to change syntax every now and then, but it's for the better.
+
+You have more control over your keys in a more uniformed, organized way with the new OOP that comes natively with
+the flagship versions. What about the functional programming?
+
+It will be removed from the flagship version. At TinyGenKey, 'tiny' is a big part for the products.
+We want to keep the products as tiny as possible, to fit properly on every* machine!
+
+No worries, because in the first time, I will create a long-term subversion that supports functional programming,
+called the `-nooop` version series. For tiny reasons, the nooop versions will not support the new OOP, and any new features.
+
+Sorry for the inconvenience, and keep generating keys!
+
+Cheers,
+tyydev1, Maintainer/Author
