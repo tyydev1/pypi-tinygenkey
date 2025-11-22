@@ -19,6 +19,48 @@ UPPERCASE_LIST = list(string.ascii_uppercase)
 NUMBERS_LIST = list(string.digits)
 PRINTABLE_LIST = list(string.printable[:-5])  # remove whitespace
 
+BINARY_LIST = list("01")
+OCTAL_LIST = list("01234567")
+DNA_LIST = list("ATGC")
+VOWELS_LIST = list("aiueo")
+CONSONANTS_LIST = list("bcdfghjklmnpqrstvwxyz")
+
+EMOJI_LIST = [
+    "\U0001F602",        # face with tears of joy
+    "\u2764\uFE0F",      # red heart
+    "\U0001F60D",        # smiling face with heart-eyes
+    "\U0001F622",        # crying face
+    "\U0001F62D",        # loudly crying face
+
+    "\U0001F60E",        # smiling face with sunglasses
+    "\U0001F44D",        # thumbs up
+    "\U0001F64F",        # folded hands
+    "\U0001F389",        # party popper
+    "\U0001F917",        # hugging face
+    "\U0001F914",        # thinking face
+
+    "\U0001F61C",        # winking face with tongue
+    "\U0001F525",        # fire
+    "\U0001F605",        # grinning face with sweat
+    "\u2764\uFE0F",      # broken heart
+    "\U0001F642",        # slightly smiling face
+
+    "\U0001F600",        # grinning face
+    "\U0001F440",        # eyes
+    "\U0001F970",        # smiling face with hearts
+    "\U0001F606",        # laughing face
+    "\U0001F44F",        # clapping hands
+    "\U0001F4AA",        # flexed biceps
+
+    "\U0001F940",        # wilted flower
+    "\U0001F480",        # skull and crossbones
+]
+
+SYMBOLS_LIST = list("!@#$%^&*")
+MORSE_LIST = list(".- ")
+PASSWORD_LIST = list(string.ascii_letters + string.digits + "".join(SYMBOLS_LIST))
+
+
 KEYS_PRESETS = Literal[
     "alphanumeric",
     "hex",
@@ -28,6 +70,15 @@ KEYS_PRESETS = Literal[
     "uppercase",
     "numbers",
     "printable",
+    "binary",
+    "octal",
+    "dna",
+    "vowels",
+    "consonants",
+    "emoji",
+    "symbols",
+    "morse",
+    "password",
 ]
 
 PRESETS = {
@@ -39,6 +90,15 @@ PRESETS = {
     "uppercase": UPPERCASE_LIST,
     "numbers": NUMBERS_LIST,
     "printable": PRINTABLE_LIST,
+    "binary": BINARY_LIST,
+    "octal": OCTAL_LIST,
+    "dna": DNA_LIST,
+    "vowels": VOWELS_LIST,
+    "consonants": CONSONANTS_LIST,
+    "emoji": EMOJI_LIST,
+    "symbols": SYMBOLS_LIST,
+    "morse": MORSE_LIST,
+    "password": PASSWORD_LIST,
 }
 
 
@@ -385,7 +445,7 @@ Available commands:
 
         elif usercmd == "presets":
             print("Available presets:")
-            for name in PRESETS:
+            for name in PRESETS.keys():
                 print(f" - {name}")
             print()
 
