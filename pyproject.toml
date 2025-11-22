@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tinygenkey"
-version = "0.3.1.1"
+version = "0.4.0-dev"
 description = "A tiny, secure key generator."
 authors = [
     { name = "Razka Rizaldi", email = "razka.rizaldis@gmail.com" }
@@ -18,9 +18,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "setuptools>=80.9.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["."]
+include = ["tinygenkey*"]
 
 [project.scripts]
-tinygenkey = "tinygenkey.main:test_gen"
+tinygenkey = "tinygenkey.main:repl"

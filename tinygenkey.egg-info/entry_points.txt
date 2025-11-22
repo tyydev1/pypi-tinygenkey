@@ -1,2 +1,2 @@
 [console_scripts]
-tinygenkey = tinygenkey.main:test_gen
+tinygenkey = tinygenkey.main:repl

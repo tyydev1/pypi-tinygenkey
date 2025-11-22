@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: tinygenkey
-Version: 0.3.1.1
+Version: 0.4.0.dev0
 Summary: A tiny, secure key generator.
 Author-email: Razka Rizaldi <razka.rizaldis@gmail.com>
 License: MIT
@@ -11,6 +11,7 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: setuptools>=80.9.0
 Dynamic: license-file
 
 [![On PyPI](https://img.shields.io/pypi/v/tinygenkey.svg)](https://pypi.org/project/tinygenkey/)

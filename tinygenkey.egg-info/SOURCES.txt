@@ -12,4 +12,5 @@ tinygenkey.egg-info/PKG-INFO
 tinygenkey.egg-info/SOURCES.txt
 tinygenkey.egg-info/dependency_links.txt
 tinygenkey.egg-info/entry_points.txt
+tinygenkey.egg-info/requires.txt
 tinygenkey.egg-info/top_level.txt
